@@ -1,0 +1,72 @@
+﻿@{
+    int[] zahlen = Enumerable.Range(1, 49).ToArray();
+
+    int[] generateNumbers()
+    {
+        Random r = new Random();
+        List<int> generated = new List<int>();
+
+        while (generated.Count < 6)
+        {
+            int z = r.Next(1, 50);
+            if (!generated.Contains(z))
+            {
+                generated.Add(z);  // Verwende Add anstatt Append für Listen
+            }
+        }
+
+        return generated.ToArray();  // Konvertiere die Liste zurück in ein Array
+    }
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Lottozahlen</title>
+    <link rel="stylesheet" href="~/style/lottozahlen.css" />
+    <style>
+        /* Sicherstellen, dass der Body keine Abstände hat */
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Abstand für den Inhalt unter dem Header */
+        h1 {
+            margin-top: 70px; /* Höhe des Headers plus ein bisschen Abstand */
+        }
+    </style>
+</head>
+<body>
+    <header style="width: 100vw; height: 60px; background-color: #CBD0CC; padding: 0; display: flex; justify-content: center; align-items: center; margin: 0; position: fixed; top: 0; left: 0; z-index: 1000;">
+        <input type="submit" onclick="window.location.href='Index.cshtml'" value="Startseite" />
+        <input type="submit" onclick="window.location.href='Einmaleins.cshtml'" value="Einmaleins" />
+        <input type="submit" onclick="window.location.href='Rechner.cshtml'" value="Rechner" />
+        <input type="submit" onclick="window.location.href='Lottozahlen.cshtml'" value="Lottozahlen neu generieren" />
+    </header>
+
+        <h1>Lottozahlen</h1>
+        <div class="container">
+            <div class="ball-container">
+                @{
+                    int[] zufall = generateNumbers();
+                }
+                <div class="ball"> @zufall[0] </div>
+                <div class="ball"> @zufall[1] </div>
+                <div class="ball"> @zufall[2] </div>
+                <div class="ball"> @zufall[3] </div>
+                <div class="ball"> @zufall[4] </div>
+                <div class="ball"> @zufall[5] </div>
+            </div>
+
+            @*<div class="button-container">
+                <br>
+                <input type="submit" onclick="window.location.href='Index.cshtml'" value="Startseite" /><br>
+                <input type="submit" onclick="window.location.href='Einmaleins.cshtml'" value="Einmaleins" /><br>
+                <input type="submit" onclick="window.location.href='Rechner.cshtml'" value="Rechner" /><br>
+                <input type="submit" onclick="window.location.href='Lottozahlen.cshtml'" value="Lottozahlen neu generieren" />
+            </div>*@
+        </div>
+</body>
+</html>

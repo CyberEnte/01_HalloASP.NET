@@ -1,0 +1,141 @@
+﻿MICROSOFT-SOFTWARE-LIZENZBEDINGUNGEN
+MICROSOFT .NET-BIBLIOTHEK
+Bei diesen Lizenzbestimmungen handelt es sich um eine Vereinbarung zwischen Ihnen und der Microsoft 
+Corporation (oder je nach Ihrem Wohnsitz, einem ihrer Affiliate-Partner). Sie gelten für die oben 
+angeführte Software. Die Bestimmungen gelten ebenso für jegliche von Microsoft angebotenen Dienste 
+oder Updates für die Software, sofern diesen keine anderen Bestimmungen beiliegen.
+WENN SIE DIESE LIZENZBESTIMMUNGEN EINHALTEN, VERFÜGEN SIE ÜBER DIE 
+NACHFOLGEND AUFGEFÜHRTEN RECHTE:
+1.	INSTALLATIONS- UND NUTZUNGSRECHTE. 
+Sie sind berechtigt, eine beliebige Anzahl an Kopien der Software zum Entwickeln und Testen Ihrer 
+Anwendungen zu installieren und zu verwenden.  
+2.	KOMPONENTEN DRITTER. Diese Software kann Komponenten Dritter enthalten, die gesonderten 
+rechtlichen Anmerkungen oder anderen Verträgen unterliegen, wie in den der Software beiliegenden 
+ThirdPartyNotices-Dateien ggf. beschrieben ist.
+3.	ZUSÄTZLICHE LIZENZANFORDERUNGEN UND/ODER NUTZUNGSRECHTE.
+a.	VERTREIBBARER CODE. Die Software besteht aus vertreibbarem Code. Der „vertreibbare 
+Code“ ist Code, den Sie in von Ihnen entwickelten Anwendungen verteilen dürfen, wenn Sie die 
+folgenden Bestimmungen einhalten.
+i.	Recht zur Nutzung und zum Vertrieb.
+•	Sie dürfen die Objektcodeform der Software kopieren und verteilen.
+•	Vertrieb durch Dritte. Sie sind berechtigt, Distributoren Ihrer Anwendungen zu erlauben, 
+den vertreibbaren Code als Teil dieser Anwendungen zu kopieren und zu vertreiben.
+ii.	Vertriebsbedingungen. Für vertreibbaren Code, den Sie vertreiben, sind Sie 
+verpflichtet:
+•	den vertreibbaren Code in Ihren Anwendungen zu verwenden und nicht als 
+eigenständige Verteilung;
+•	von Händlern und externen Endbenutzern die Zustimmung zu Bedingungen zu verlangen, 
+die einen mindestens gleichwertigen Schutz für den Code bieten wie diese Vereinbarung; 
+und
+•	Microsoft von allen Ansprüchen und Kosten, einschließlich Anwaltsgebühren, freistellen 
+und gegen alle Ansprüche verteidigen, die mit dem Vertrieb oder der Nutzung Ihrer 
+Anwendungen in Zusammenhang stehen, außer insoweit sich ein Anspruch ausschließlich 
+auf den unveränderten vertreibbaren Code stützt.
+iii.	Vertriebsbeschränkungen. Sie sind nicht dazu berechtigt:
+•	die Marken von Microsoft in den Namen Ihrer Anwendungen oder auf eine Weise zu 
+verwenden, die nahelegt, dass Ihre Anwendungen von Microsoft stammen oder von 
+Microsoft empfohlen werden, oder
+•	den Quellcode von vertreibbarem Code so zu ändern oder zu vertreiben, dass irgendein 
+Teil von ihm einer ausgeschlossenen Lizenz unterliegt. Bei einer „ausgeklammerten 
+Lizenz" handelt es sich um eine Lizenz, die als Bedingung für Nutzung, Änderung oder 
+Verteilung des Codes erfordert, dass (a) diese in Quellcodeform offengelegt oder verteilt 
+wird oder (b) andere das Recht haben, dieselbe zu ändern.
+4.	DATEN.
+a.	Datenerfassung. Die Software erhebt möglicherweise Informationen über Sie und Ihre 
+Verwendung der Software und sendet diese an Microsoft. Microsoft kann diese Informationen 
+verwenden, um unsere Produkte und Dienste bereitzustellen und zu verbessern.  Sie können sich 
+gegen viele dieser Szenarios entscheiden, jedoch nicht gegen alle, wie in der 
+Softwaredokumentation beschrieben.  Die Software besitzt auch einige Funktionen, mit denen Sie 
+und Microsoft Informationen über die Nutzer Ihrer Anwendungen sammeln können. Wenn Sie 
+diese Funktionen nutzen, müssen Sie die geltenden Gesetze einhalten, einschließlich der 
+Bereitstellung entsprechender Hinweise für Nutzer Ihrer Anwendungen zusammen mit einer 
+Kopie der Datenschutzerklärung von Microsoft. Unsere Datenschutzerklärung finden Sie unter 
+https://go.microsoft.com/fwlink/?LinkID=824704. Mehr über Datensammlung und deren Nutzung 
+können Sie in der Softwaredokumentation und in unserer Datenschutzerklärung erfahren. Durch 
+die Nutzung der Software erklären Sie sich mit diesen Praktiken einverstanden.
+b.	Verarbeitung personenbezogener Daten. Soweit Microsoft im Zusammenhang mit der 
+Software als Auftragsverarbeiter oder Unterauftragsverarbeiter von personenbezogenen Daten 
+auftritt, geht Microsoft im Rahmen der Datenschutz-Grundverordnung der Europäischen Union 
+zum 25. Mai 2018 allen Kunden gegenüber die Verpflichtungen gemäß den Bestimmungen für 
+Onlinedienste ein, die unter https://docs.microsoft.com/en-us/legal/gdpr verfügbar sind.
+5.	GÜLTIGKEITSBEREICH DER LIZENZ. Die Software wird lizenziert, nicht verkauft. Diese 
+Vereinbarung gewährt Ihnen lediglich bestimmte Rechte zur Nutzung der Software. Microsoft behält 
+sich alle anderen Rechte vor. Sie dürfen die Software nur wie in dieser Vereinbarung ausdrücklich 
+gestattet nutzen, es sei denn, das anwendbare Recht gibt Ihnen ungeachtet dieser Einschränkung 
+umfassendere Rechte. Dabei sind Sie verpflichtet, alle technischen Beschränkungen der Software 
+einzuhalten, die Ihnen nur spezielle Verwendungen gestatten. Sie sind nicht dazu berechtigt:
+•	technische Beschränkungen der Software zu umgehen;
+•	die Software zurückzuentwickeln, zu dekompilieren oder zu disassemblieren oder anderweitig zu 
+versuchen, den Quellcode für die Software abzuleiten, ausgenommen und in dem Maße, wie dies 
+in Lizenzierungsbedingungen für Dritte vorgesehen ist, die die Verwendung bestimmter Open-
+Source-Komponenten regeln, die in der Software enthalten sein können;
+•	Mitteilungen der Firma Microsoft oder ihrer Lieferanten in der Software zu entfernen, zu 
+minimieren, zu blockieren oder zu verändern; 
+•	die Software auf eine Weise zu verwenden, die gegen das Gesetz verstößt, oder
+•	die Software gemeinsam zu nutzen, zu veröffentlichen oder zu verleihen oder die Software als 
+eigenständiges Angebot für Nutzung durch andere bereitzustellen.
+6.	AUSFUHRBESCHRÄNKUNGEN. Sie sind verpflichtet, alle nationalen und internationalen 
+Exportgesetze und Exportbestimmungen einzuhalten, die für die Software gelten, welche auch 
+Beschränkungen in Bezug auf Bestimmungsorte, Endbenutzer und die Endnutzung enthalten. Weitere 
+Informationen zu Ausfuhrbeschränkungen finden Sie unter www.microsoft.com/exporting.  
+7.	SUPPORTSERVICES. Da diese Software „wie besehen“ verkauft wird, stellen wir für diese 
+möglicherweise keine Supportleistungen zur Verfügung.
+8.	GESAMTER VERTRAG. Diese Vereinbarung sowie die Bestimmungen für von Ihnen genutzte 
+Ergänzungen, Aktualisierungen, internetbasierte Dienste und Supportleistungen stellen die 
+Gesamtvereinbarung über die Software und die Supportleistungen dar.
+9.	ANWENDBARES RECHT.  Wenn Sie die Software in den USA erworben haben, regeln die Gesetze 
+des Bundesstaates Washington die Auslegung dieser Vereinbarung sowie Ansprüche, die aus einer 
+Vertragsverletzung entstehen, und die Gesetze des Bundesstaates, in dem Sie leben, regeln alle 
+anderen Ansprüche. Wenn Sie die Software in einem anderen Land erworben haben, gelten die 
+Gesetze dieses Landes.
+10.	VERBRAUCHERRECHTE, REGIONALE VARIANTEN. Diese Vereinbarung beschreibt bestimmte 
+Rechte. Möglicherweise sehen die Gesetze Ihres Staats oder Lands andere Rechte vor, einschließlich 
+Verbraucherrechte. Möglicherweise verfügen Sie unabhängig von Ihrer Geschäftsbeziehung mit 
+Microsoft außerdem über Rechte im Hinblick auf den Lizenzgeber, von dem Sie die Software 
+erworben haben. Dieser Vertrag ändert diese anderen Rechte nicht, wenn die Gesetze Ihres 
+Bundesstaates oder Lands dies nicht gestatten. Wenn Sie die Software beispielsweise in einer der 
+unten genannten Regionen erworben haben oder zwingendes Recht des Landes Anwendung findet, 
+gelten die folgenden Bestimmungen für Sie:
+a)	Australien. Für Sie gelten die gesetzlichen Garantien gemäß des Australian Consumer Law und 
+diese Vereinbarung hat in keiner Weise die Absicht, diese Rechte einzuschränken.
+b)	Kanada. Sofern Sie diese Software in Kanada erwarben, können Sie ggf. den Empfang von 
+Aktualisierungen durch die Deaktivierung der automatischen Aktualisierungsfunktion einstellen 
+lassen bzw. durch die Trennung Ihres Gerätes vom Internet (sofern Sie das Gerät erneut 
+verbinden, wird die Software weiterhin Aktualisierungen aus dem Internet abfragen und zu 
+installieren versuchen) oder durch die Deinstallation der Software. Hinweise zur Deaktivierung 
+der Aktualisierungsfunktion bei Ihrem spezifischen Gerät oder Ihrer spezifischen Software sind 
+ggf. im Besonderen auch der jeweiligen Produktdokumentation zu entnehmen.
+c)	Deutschland und Österreich.
+(i)	Gewährleistung. Die Software wird im Wesentlichen so funktionieren, wie in den sie 
+begleitenden Microsoft-Unterlagen beschrieben. Jedoch gewährt Microsoft keine vertragliche 
+Garantie in Bezug auf die Software.
+(ii)	Haftungsbeschränkung. Bei Vorsatz, grober Fahrlässigkeit und Ansprüchen nach dem 
+Produkthaftungsgesetz sowie bei Tod oder Körperverletzung haftet Microsoft nach den 
+gesetzlichen Bestimmungen.
+Vorbehaltlich der vorstehenden Klausel (ii) haftet Microsoft bei leichter Fahrlässigkeit nur, wenn das 
+Unternehmen eine wesentliche Vertragspflicht verletzt, deren Erfüllung die ordnungsgemäße 
+Durchführung dieses Vertrages überhaupt erst ermöglicht, deren Verletzung die Erreichung des 
+Vertragszwecks gefährdet und auf deren Einhaltung eine Partei regelmäßig vertrauen darf (sog. 
+„Kardinalpflichten“). In anderen Fällen von leichter Fahrlässigkeit haftet Microsoft nicht.
+11.	AUSSCHLUSS VON GARANTIEN. DIE SOFTWARE WIRD „WIE BESEHEN“ LIZENZIERT. SIE 
+TRAGEN DAS MIT DER VERWENDUNG VERBUNDENE RISIKO. MICROSOFT GEWÄHRT 
+KEINE AUSDRÜCKLICHEN GEWÄHRLEISTUNGEN ODER GARANTIEN. IN DEM NACH 
+IHREM ÖRTLICH ANWENDBAREN RECHT ZULÄSSIGEN UMFANG SCHLIESST MICROSOFT 
+KONKLUDENTE GARANTIEN DER HANDELSÜBLICHKEIT, EIGNUNG FÜR EINEN 
+BESTIMMTEN ZWECK UND NICHTVERLETZUNG VON RECHTEN DRITTER AUS. 
+12.	BESCHRÄNKUNG UND AUSSCHLUSS VON ABHILFEANSPRÜCHEN UND SCHADENERSATZ. 
+SIE KÖNNEN VON MICROSOFT UND DEREN LIEFERANTEN NUR EINEN ERSATZ FÜR 
+DIREKTE SCHÄDEN BIS ZU EINEM BETRAG VON 5,00 US-DOLLAR ERHALTEN. SIE 
+KÖNNEN KEINEN ERSATZ FÜR ANDERE SCHÄDEN ERHALTEN, EINSCHLIESSLICH 
+FOLGESCHÄDEN, SCHÄDEN AUS ENTGANGENEM GEWINN, SPEZIELLER, INDIREKTER 
+ODER ZUFÄLLIGER SCHÄDEN.
+Diese Einschränkung gilt für (a) jeden Gegenstand im Zusammenhang mit der Software, Diensten, 
+Inhalten (einschließlich Code) auf Internetseiten von Drittanbietern oder Anwendungen von Dritten 
+und (b) Ansprüche aus Vertragsverletzungen, Verletzungen der Garantie oder der Gewährleistung, 
+verschuldensunabhängiger Haftung, Fahrlässigkeit oder anderen unerlaubten Handlungen im durch 
+das anwendbare Recht zugelassenen Umfang.
+Sie hat auch dann Gültigkeit, wenn Microsoft von der Möglichkeit der Schäden gewusst hat oder hätte 
+wissen müssen. Obige Beschränkung und obiger Ausschluss gelten möglicherweise nicht für Sie, weil 
+Ihr Staat oder Land den Ausschluss oder die Beschränkung von zufälligen Schäden, Folgeschäden 
+oder sonstigen Schäden nicht gestattet.
+

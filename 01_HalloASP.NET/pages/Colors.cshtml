@@ -1,0 +1,171 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farbwechsel</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        #colorBox {
+            width: 300px;
+            height: 300px;
+            border: 2px solid #000;
+            margin-bottom: 20px;
+        }
+
+        #timeSlider {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="colorBox"></div>
+    <div id="colorBox2"></div>
+    @{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farbwechsel</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        #colorBox {
+            width: 300px;
+            height: 300px;
+            border: 2px solid #000;
+            margin-bottom: 20px;
+        }
+        #timeSlider {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="colorBox"></div>
+    <div id="colorBox2"></div>
+
+    <input type="range" id="timeSlider" min="100" max="5000" step="100" value="1000">
+    <input type="button" id="start" value="Start" onclick="startColorChange()">
+    <input type="button" id="stop" value="Stop" onclick="stopColorChange()">
+    <label for="timeSlider">Wechselzeit (ms): <span id="sliderValue">1000</span></label>
+
+    <script>
+        const colorBox = document.getElementById('colorBox');
+        const colorBox = document.getElementById('colorBox2');
+
+        const timeSlider = document.getElementById('timeSlider');
+        const sliderValue = document.getElementById('sliderValue');
+
+        const startButton = document.getElementById('start');
+        const stopButton = document.getElementById('stop');
+
+        let intervalId;
+
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        function changeColor() {
+            colorBox.style.backgroundColor = getRandomColor();
+        }
+        function stopChangeColor() {
+            colorBox.style.backgroundColor = colorBox.style.backgroundColor;
+        }
+
+        function startColorChange() {
+            changeColor(); // initial color change
+            const intervalTime = parseInt(timeSlider.value);
+            intervalId = setInterval(changeColor, intervalTime);
+        }
+
+        function stopColorChange() {
+            clearInterval(intervalId);
+            stopChangeColor();
+        }
+
+        timeSlider.addEventListener('input', function () {
+            sliderValue.textContent = this.value;
+            stopColorChange();
+            startColorChange();
+        });
+
+        window.onload = startColorChange;
+    </script>
+</body>
+</html>
+
+    <input type="range" id="timeSlider" min="100" max="5000" step="100" value="1000">
+    <input type="button" id="stop" value="Stop" onclick="stopColorChange()">
+
+    <label for="timeSlider">Wechselzeit (ms): <span id="sliderValue">1000</span></label>
+
+    <script>
+        const colorBox = document.getElementById('colorBox');
+        const timeSlider = document.getElementById('timeSlider');
+        const sliderValue = document.getElementById('sliderValue');
+
+        let intervalId;
+
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        function changeColor() {
+            colorBox.style.backgroundColor = getRandomColor();
+        }
+
+        function startColorChange() {
+            changeColor(); // initial color change
+            const intervalTime = parseInt(timeSlider.value);
+            intervalId = setInterval(changeColor, intervalTime);
+        }
+
+        function stopColorChange() {
+            clearInterval(intervalId);
+        }
+
+        timeSlider.addEventListener('input', function () {
+            sliderValue.textContent = this.value;
+            stopColorChange();
+            startColorChange();
+        });
+
+        window.onload = startColorChange;
+    </script>
+</body>
+</html>

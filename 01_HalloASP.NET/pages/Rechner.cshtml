@@ -1,0 +1,101 @@
+﻿@{
+    double ergebnis = new double();
+    string message = "";
+
+    if (IsPost)
+    {
+        string op = Request["op"];
+
+        //double z1 = Double.TryParse(Request["z1"], out bool res);
+
+        //double z2 = Double.TryParse(Request["z2"], out bool res);
+
+
+        //double z2 = Double.Parse(Request["z2"]);
+
+        double z1 = Double.Parse(Request["z1"]);
+        double z2 = Double.Parse(Request["z2"]);
+
+        switch (op)
+        {
+            case "+":
+                ergebnis = z1 + z2;
+                break;
+            case "-":
+                ergebnis = z1 - z2;
+                break;
+            case "*":
+                ergebnis = z1 * z2;
+                break;
+            case "/":
+                if (z2 != 0)
+                { ergebnis = z1 / z2; }
+                else
+                { message = "Zahl 2 darf nicht 0 sein!"; }
+
+                break;
+            default:
+                message = "Ungültige Operation";
+                break;
+        }
+        
+    }
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Rechner</title>
+    <link rel="stylesheet" href="~/style/rechner.css" />
+    <style>
+        /* Sicherstellen, dass der Body keine Abstände hat */
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Abstand für den Inhalt unter dem Header */
+        h1 {
+            margin-top: 70px; /* Höhe des Headers plus ein bisschen Abstand */
+        }
+    </style>
+</head>
+<body>
+    <header style="width: 100vw; height: 60px; background-color: #CBD0CC; padding: 0; display: flex; justify-content: center; align-items: center; margin: 0; position: fixed; top: 0; left: 0; z-index: 1000;">
+        <input type="button" onclick="window.location.href='Index.cshtml'" value="Startseite" />
+        <input type="button" onclick="window.location.href='Einmaleins.cshtml'" value="Einmaleins" />
+        <input type="button" onclick="window.location.href='Lottozahlen.cshtml'" value="Lottozahlen" />
+    </header>    
+
+    <h1>Willkommen beim Online Rechner</h1>
+
+    <div>
+        <form action="" method="post">
+            <p>
+                <label for="z1">Zahl 1: </label>
+                <input type="text" name="z1" value="@Request["z1"]" placeholder="Zahl 1 eingeben" /> @*@Request hier nicht nötig*@
+            </p>
+
+            <p>
+                <label for="z2">Zahl 2: </label>
+                <input type="text" name="z2" value="@Request["z2"]" placeholder="Zahl 2 eingeben" /> @*@Request hier nicht nötig*@
+            </p>
+
+            <p class="error">@message</p>
+
+            <p>
+                <input type="submit" name="op" value="+" />
+                <input type="submit" name="op" value="-" />
+                <input type="submit" name="op" value="*" />
+                <input type="submit" name="op" value="/" />
+            </p>
+
+            <p>
+                Das Ergebnis lautet @ergebnis
+            </p>
+        </form>
+
+    </div>
+</body>
+</html>

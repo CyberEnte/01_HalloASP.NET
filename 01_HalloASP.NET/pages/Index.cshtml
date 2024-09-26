@@ -1,0 +1,133 @@
+﻿@{
+    String msg = "Hallo BFI12a";
+    DateTime jetzt = DateTime.Now;
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Startseite</title>
+    <link rel="stylesheet" href="~/style/index.css" />
+    <style>
+        /* Sicherstellen, dass der Body keine Abstände hat */
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Abstand für den Inhalt unter dem Header */
+        h1 {
+            margin-top: 70px; /* Höhe des Headers plus ein bisschen Abstand */
+        }
+
+        input[type="submit"] {
+            padding: 10px 15px;
+            font-size: 16px;
+            height: 40px;
+            border: none;
+            background-color: #A9A8A6;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 0 10px;
+        }
+
+        .video-container {
+            display: none; /* Standardmäßig verstecken */
+            position: fixed;
+            top: 50px; /* Unterhalb des Headers */
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 999; /* Hinter dem Header */
+        }
+
+        dialog{
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <header style="width: 100vw; height: 60px; background-color: #CBD0CC; padding: 0; display: flex; justify-content: center; align-items: center; margin: 0; position: fixed; top: 0; left: 0; z-index: 1000;">
+        <input type="submit" class="show-video" download data-video-path="http://localhost:63780/media/dino.mp4" value="Einmaleins" />
+        <input type="submit" class="show-video" download data-video-path="http://localhost:63780/media/mausmaki.mp4"  value="Lottozahlen" />
+        <input type="submit" class="show-video" download data-video-path="http://localhost:63780/media/kawasaki.mp4" alt="Kawasaki Cargo Crico Estryper on Make a GIF" onclick="window.location.href='Rechner.cshtml'" value="Rechner" />
+    </header>
+
+    <div class="video-container">
+        <video id="videoPlayer" width="400" controls muted>
+            <source src="" type="video/mp4">
+            Dein Browser unterstützt das Video-Tag nicht.
+        </video>
+    </div>
+
+    <script>
+        const videoContainer = document.querySelector('.video-container');
+        const videoPlayer = document.getElementById('videoPlayer');
+        const showVideoButtons = document.querySelectorAll('.show-video');
+       
+        showVideoButtons.forEach(button => {
+            button.addEventListener('mouseenter', () => {
+
+                const videoSrc = button.getAttribute('data-video-path');
+                console.log(videoSrc);
+                
+                videoPlayer.src = videoSrc; // Quelle des Videos setzen
+                videoContainer.style.display = 'block'; // Video anzeigen
+                videoPlayer.play().catch(error => console.error('Error trying to play the video:', error)); // Fehlerbehandlung
+
+
+                
+                const videoSrc2 = button.getAttribute('data-video-path');
+                const a = document.createElement('a');
+                a.href = videoSrc2; // Video-URL
+                a.download = ''; // Leeres Download-Attribut
+                document.body.appendChild(a);
+                a.click(); // Simuliere einen Klick
+                document.body.removeChild(a); // Entferne das Element wieder
+                event.preventDefault(); // Verhindert die Standardaktion
+               
+                
+            });
+
+            button.addEventListener('mouseleave', () => {
+                videoContainer.style.display = 'none'; // Video ausblenden
+                videoPlayer.pause(); // Video anhalten
+                videoPlayer.currentTime = 0; // Zurücksetzen des Videos
+            });
+
+        });
+    </script>
+
+    <div>
+        <h1>Wilkommen zu ASP.NET</h1>
+        @msg
+        <p>
+            Heute ist @jetzt.ToString("dddd"), der @jetzt.ToShortDateString(). Es ist @jetzt.ToShortTimeString() Uhr.
+            @if (jetzt.DayOfWeek == DayOfWeek.Friday)
+            {
+            <p> Bald ist Wochenende! </p>
+        }
+
+            <ul>
+                @for (int i = 0; i < 10; i++)
+                {
+                    String s = $"{(i + 10)}px";
+                    <li style="font-size:@(i+10)px">Test @i </li>
+
+                    <!-- Alternative: -->
+                    <!-- li style="font-size:@s">Test @i </li> -->
+                }
+            </ul>
+
+            </p>
+
+            @*<input type="button" value="Zum Einmaleins" formaction="Einmaleins.cshtml" />*@
+            @*<input type="submit" onclick="window.location.href='Einmaleins.cshtml'" value="Einmaleins"/><br>
+                <input type="submit" onclick="window.location.href='Lottozahlen.cshtml'" value="Lottozahlen"/><br>
+                <input type="submit" onclick="window.location.href='Rechner.cshtml'" value="Rechner"/>*@
+        </div>
+    </body>
+</html>

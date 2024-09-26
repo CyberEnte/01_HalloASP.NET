@@ -1,0 +1,67 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Das Einmaleins</title>
+    <link rel="stylesheet" href="~/style/einmaleins.css" />
+    <style>
+        /* Sicherstellen, dass der Body keine Abstände hat */
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Abstand für den Inhalt unter dem Header */
+        h1 {
+            margin-top: 70px; /* Höhe des Headers plus ein bisschen Abstand */
+        }
+    </style>
+</head>
+<body>
+    <header style="width: 100vw; height: 60px; background-color: #CBD0CC; padding: 0; display: flex; justify-content: center; align-items: center; margin: 0; position: fixed; top: 0; left: 0; z-index: 1000;">
+        <input type="submit" onclick="window.location.href='Index.cshtml'" value="Startseite" />
+        <input type="submit" onclick="window.location.href='Lottozahlen.cshtml'" value="Lottozahlen" />
+        <input type="submit" onclick="window.location.href='Rechner.cshtml'" value="Rechner" />
+    </header>
+
+    <div>
+        <h1>Das Einmaleins</h1>
+
+        <table border="1">
+            <tr>
+                <th id="center" class="blue">x</th>
+                @for (int i = 1; i <= 10; i++)
+                {
+                    <th class="blue">@i</th>
+                }
+            </tr>
+
+            <tr>
+                @for (int i = 1; i <= 10; i++)
+                {
+                <tr>
+                    <td class="blue">@i</td>
+                    @for (int i2 = 1; i2 < 11; i2++)
+                    {
+                        int erg = @i * @i2;
+                        <td> @erg </td>
+                    }
+
+                </tr>
+            }
+                </tr>
+            </table>
+
+        </div>
+
+        @*<br>
+        <input type="submit" onclick="window.location.href='Index.cshtml'" value="Startseite" /><br>
+        <input type="submit" onclick="window.location.href='Lottozahlen.cshtml'" value="Lottozahlen" /><br>
+        <input type="submit" onclick="window.location.href='Rechner.cshtml'" value="Rechner" /><br>*@
+    </body>
+</html>
