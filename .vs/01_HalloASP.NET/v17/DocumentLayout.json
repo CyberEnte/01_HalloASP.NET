@@ -1,12 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "H:\\BFI12a\\AEmP\\WebProg_BAR\\01_HalloASP.NET\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\klavi\\Desktop\\01_HalloASP.NET\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9214833B-4D87-4298-AA67-01F24EEEC83C}|01_HalloASP.NET\\01_HalloASP.NET.csproj|c:\\users\\klavi\\desktop\\01_halloasp.net\\01_halloasp.net\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9214833B-4D87-4298-AA67-01F24EEEC83C}|01_HalloASP.NET\\01_HalloASP.NET.csproj|solutionrelative:01_halloasp.net\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\klavi\\Desktop\\01_HalloASP.NET\\01_HalloASP.NET\\pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "01_HalloASP.NET\\pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\klavi\\Desktop\\01_HalloASP.NET\\01_HalloASP.NET\\pages\\Index.cshtml",
+              "RelativeToolTip": "01_HalloASP.NET\\pages\\Index.cshtml",
+              "ViewState": "AQIAAAUAAABQzczMzMwnwBgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-28T11:38:10.559Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

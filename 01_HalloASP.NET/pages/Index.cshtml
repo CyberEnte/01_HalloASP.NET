@@ -43,43 +43,43 @@
             z-index: 999; /* Hinter dem Header */
         }
 
-        dialog{
+        dialog {
             display: none;
         }
-
     </style>
 </head>
 <body>
     <header style="width: 100vw; height: 60px; background-color: #CBD0CC; padding: 0; display: flex; justify-content: center; align-items: center; margin: 0; position: fixed; top: 0; left: 0; z-index: 1000;">
         <input type="submit" class="show-video" download data-video-path="http://localhost:63780/media/dino.mp4" value="Einmaleins" />
-        <input type="submit" class="show-video" download data-video-path="http://localhost:63780/media/mausmaki.mp4"  value="Lottozahlen" />
+        <input type="submit" class="show-video" download data-video-path="http://localhost:63780/media/mausmaki.mp4" value="Lottozahlen" />
         <input type="submit" class="show-video" download data-video-path="http://localhost:63780/media/kawasaki.mp4" alt="Kawasaki Cargo Crico Estryper on Make a GIF" onclick="window.location.href='Rechner.cshtml'" value="Rechner" />
     </header>
 
     <div class="video-container">
-        <video id="videoPlayer" width="400" controls muted>
+        <video id="videoPlayer" width="400" controls>
             <source src="" type="video/mp4">
             Dein Browser unterstützt das Video-Tag nicht.
         </video>
     </div>
 
+
     <script>
         const videoContainer = document.querySelector('.video-container');
         const videoPlayer = document.getElementById('videoPlayer');
         const showVideoButtons = document.querySelectorAll('.show-video');
-       
+
         showVideoButtons.forEach(button => {
             button.addEventListener('mouseenter', () => {
 
                 const videoSrc = button.getAttribute('data-video-path');
                 console.log(videoSrc);
-                
+
                 videoPlayer.src = videoSrc; // Quelle des Videos setzen
                 videoContainer.style.display = 'block'; // Video anzeigen
                 videoPlayer.play().catch(error => console.error('Error trying to play the video:', error)); // Fehlerbehandlung
 
 
-                
+
                 const videoSrc2 = button.getAttribute('data-video-path');
                 const a = document.createElement('a');
                 a.href = videoSrc2; // Video-URL
@@ -88,8 +88,8 @@
                 a.click(); // Simuliere einen Klick
                 document.body.removeChild(a); // Entferne das Element wieder
                 event.preventDefault(); // Verhindert die Standardaktion
-               
-                
+
+
             });
 
             button.addEventListener('mouseleave', () => {
