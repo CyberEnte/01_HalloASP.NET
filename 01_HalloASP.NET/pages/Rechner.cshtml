@@ -1,10 +1,11 @@
-﻿@{
+﻿@page
+@{
     double ergebnis = new double();
     string message = "";
 
-    if (IsPost)
+    if (Request.Method == "POST")
     {
-        string op = Request["op"];
+        string op = Request.Form["op"];
 
         //double z1 = Double.TryParse(Request["z1"], out bool res);
 
@@ -13,8 +14,8 @@
 
         //double z2 = Double.Parse(Request["z2"]);
 
-        double z1 = Double.Parse(Request["z1"]);
-        double z2 = Double.Parse(Request["z2"]);
+        double z1 = Double.Parse(Request.Form["z1"]);
+        double z2 = Double.Parse(Request.Form["z2"]);
 
         switch (op)
         {
@@ -74,12 +75,12 @@
         <form action="" method="post">
             <p>
                 <label for="z1">Zahl 1: </label>
-                <input type="text" name="z1" value="@Request["z1"]" placeholder="Zahl 1 eingeben" /> @*@Request hier nicht nötig*@
+                <input type="text" name="z1" value="@Request.Form["z1"]" placeholder="Zahl 1 eingeben" /> @*@Request hier nicht nötig*@
             </p>
 
             <p>
                 <label for="z2">Zahl 2: </label>
-                <input type="text" name="z2" value="@Request["z2"]" placeholder="Zahl 2 eingeben" /> @*@Request hier nicht nötig*@
+                <input type="text" name="z2" value="@Request.Form["z2"]" placeholder="Zahl 2 eingeben" /> @*@Request hier nicht nötig*@
             </p>
 
             <p class="error">@message</p>
