@@ -1,4 +1,5 @@
-﻿@{
+﻿@page
+@{
     String msg = "Hallo BFI12a";
     DateTime jetzt = DateTime.Now;
 
@@ -50,9 +51,9 @@
 </head>
 <body>
     <header style="width: 100vw; height: 60px; background-color: #CBD0CC; padding: 0; display: flex; justify-content: center; align-items: center; margin: 0; position: fixed; top: 0; left: 0; z-index: 1000;">
-        <input type="submit" class="show-video" download data-video-path="http://localhost:63780/media/dino.mp4" value="Einmaleins" />
-        <input type="submit" class="show-video" download data-video-path="http://localhost:63780/media/mausmaki.mp4" value="Lottozahlen" />
-        <input type="submit" class="show-video" download data-video-path="http://localhost:63780/media/kawasaki.mp4" alt="Kawasaki Cargo Crico Estryper on Make a GIF" onclick="window.location.href='Rechner.cshtml'" value="Rechner" />
+        <input type="submit" class="show-video" download data-video-path="./media/dino.mp4" value="Einmaleins" />
+        <input type="submit" class="show-video" download data-video-path="./media/mausmaki.mp4" value="Lottozahlen" />
+        <input type="submit" class="show-video" download data-video-path="./media/kawasaki.mp4" alt="Kawasaki Cargo Crico Estryper on Make a GIF" onclick="window.location.href='Rechner.cshtml'" value="Rechner" />
     </header>
 
     <div class="video-container">
@@ -109,25 +110,26 @@
             @if (jetzt.DayOfWeek == DayOfWeek.Friday)
             {
             <p> Bald ist Wochenende! </p>
-        }
+            }
 
-            <ul>
+        <ul>
                 @for (int i = 0; i < 10; i++)
                 {
                     String s = $"{(i + 10)}px";
-                    <li style="font-size:@(i+10)px">Test @i </li>
+                <li style="font-size:@(i+10)px">Test @i </li>
 
-                    <!-- Alternative: -->
-                    <!-- li style="font-size:@s">Test @i </li> -->
+                <!-- Alternative: -->
+                <!-- li style="font-size:@s">Test @i </li> -->
                 }
-            </ul>
+        </ul>
 
-            </p>
+        </p>
 
-            @*<input type="button" value="Zum Einmaleins" formaction="Einmaleins.cshtml" />*@
-            @*<input type="submit" onclick="window.location.href='Einmaleins.cshtml'" value="Einmaleins"/><br>
-                <input type="submit" onclick="window.location.href='Lottozahlen.cshtml'" value="Lottozahlen"/><br>
-                <input type="submit" onclick="window.location.href='Rechner.cshtml'" value="Rechner"/>*@
-        </div>
-    </body>
+        @*<input type="button" value="Zum Einmaleins" formaction="Einmaleins.cshtml" />*@
+        @*<input type="submit" onclick="window.location.href='Einmaleins.cshtml'" value="Einmaleins"/><br>
+        <input type="submit" onclick="window.location.href='Lottozahlen.cshtml'" value="Lottozahlen"/><br>
+        <input type="submit" onclick="window.location.href='Rechner.cshtml'" value="Rechner"/>*@
+    </div>
+</body>
 </html>
+

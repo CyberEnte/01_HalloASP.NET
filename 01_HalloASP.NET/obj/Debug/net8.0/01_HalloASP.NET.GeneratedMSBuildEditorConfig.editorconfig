@@ -1,0 +1,39 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = _01_HalloASP.NET
+build_property.RootNamespace = _01_HalloASP.NET
+build_property.ProjectDir = C:\Users\XB01\source\repos\01_HalloASP.NET\01_HalloASP.NET\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\XB01\source\repos\01_HalloASP.NET\01_HalloASP.NET
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/XB01/source/repos/01_HalloASP.NET/01_HalloASP.NET/Pages/Colors.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29sb3JzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/XB01/source/repos/01_HalloASP.NET/01_HalloASP.NET/Pages/Einmaleins.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWlubWFsZWlucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/XB01/source/repos/01_HalloASP.NET/01_HalloASP.NET/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/XB01/source/repos/01_HalloASP.NET/01_HalloASP.NET/Pages/Lottozahlen.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG90dG96YWhsZW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/XB01/source/repos/01_HalloASP.NET/01_HalloASP.NET/Pages/Rechner.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVjaG5lci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
